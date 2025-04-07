@@ -430,7 +430,6 @@ public class VehicleMenu : BaseScript
             ////Debug.WriteLine("Dimension is -1!");
             return;
         }
-        Debug.WriteLine("Before spawn");
         Vehicle veh = await World.CreateVehicle(new(hash),
             new(vehicleGarageSpawnPos.X, vehicleGarageSpawnPos.Y, vehicleGarageSpawnPos.Z - 0.97f), vehicleGarageSpawnPos.W);
         veh.IsPositionFrozen = true;
